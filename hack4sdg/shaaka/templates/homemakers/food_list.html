@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Food Items</title>
+</head>
+<body>
+    <h2>Your Food Items</h2>
+    <ul>
+        {% for food_item in food_items %}
+            <li>{{ food_item.name }} - {{ food_item.description }}</li>
+        {% empty %}
+            <li>No food items added yet.</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'homemakers:add_food_item' %}">Add a new food item</a>
+</body>
+</html>

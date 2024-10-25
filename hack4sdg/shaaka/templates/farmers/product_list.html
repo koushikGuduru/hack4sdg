@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Products</title>
+</head>
+<body>
+    <h2>Your Products</h2>
+    <ul>
+        {% for product in products %}
+            <li>{{ product.name }} - {{ product.quantity }} - ${{ product.price_per_quantity }}</li>
+        {% empty %}
+            <li>No products added yet.</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'farmers:add_product' %}">Add a new product</a>
+</body>
+</html>

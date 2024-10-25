@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    {% load static %}  <!-- Load the static template tag library -->
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}"> <!-- Link to a CSS file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #35424a;
+        }
+        .content {
+            text-align: center;
+            padding: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #35424a;
+            color: #ffffff;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Our Website</h1>
+</header>
+<div class="content">
+    <h2>Your One-Stop Solution</h2>
+    <p>Explore our services and find what you need!</p>
+    <p>We are dedicated to helping our community.</p>
+</div>
+
+<footer>
+    <p>&copy; 2023 Your Company Name. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
